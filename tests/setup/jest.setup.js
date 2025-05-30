@@ -1,5 +1,5 @@
 // Global test setup
-process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = "test";
 
 // Set test timeout (useful for database operations)
 jest.setTimeout(30000);
@@ -15,10 +15,10 @@ global.console = {
 
 // Global test utilities
 global.createMockCustomer = (overrides = {}) => ({
-  name: 'Test Customer',
-  email: 'test@example.com',
+  name: "Test Customer",
+  email: "test@example.com",
   age: 25,
-  ...overrides
+  ...overrides,
 });
 
 // Add any other global test utilities here
