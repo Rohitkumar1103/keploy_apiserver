@@ -1,5 +1,5 @@
-const { MongoMemoryServer } = require('mongodb-memory-server');
-const mongoose = require('mongoose');
+const { MongoMemoryServer } = require("mongodb-memory-server");
+const mongoose = require("mongoose");
 
 let mongoServer;
 
@@ -8,7 +8,7 @@ const setupTestDB = async () => {
   // Create in-memory MongoDB instance
   mongoServer = await MongoMemoryServer.create();
   const mongoUri = mongoServer.getUri();
-  
+
   // Connect to the in-memory database
   await mongoose.connect(mongoUri);
 };
@@ -35,5 +35,5 @@ const clearTestDB = async () => {
 module.exports = {
   setupTestDB,
   teardownTestDB,
-  clearTestDB
+  clearTestDB,
 };
