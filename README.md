@@ -100,7 +100,7 @@ GET /api/customers
    Create a `.env` file in the root directory:
    ```env
    PORT=3000
-   MONGODB_URI=mongodb://localhost:27017/customer-db
+   MONGODB_URI=url
    NODE_ENV=development
    ```
 
