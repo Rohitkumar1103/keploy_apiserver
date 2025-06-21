@@ -21,3 +21,5 @@ app.use('/cus',cusRoute)
 app.listen(PORT,()=>{
     console.log(`Server has strated running at ${PORT} PORT`);
 })
+
+module.exports = app;
